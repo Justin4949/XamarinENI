@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 xmlns:local="clr-namespace:TPXamarin"
-x:Class="TPXamarin.MainPage"
+x:Class="Twitter.MainPage"
 BackgroundColor="White">
     <StackLayout>
         <ContentView BackgroundColor="#58B0F0">
@@ -48,10 +48,10 @@ BackgroundColor="White">
 
         <ContentView WidthRequest="75" HeightRequest="75">
             <StackLayout Orientation="Horizontal">
-                <Button HorizontalOptions="FillAndExpand" Text="Fil" TextColor="#58B0F0" FontSize="11" BackgroundColor="White" Clicked=""/>
-                <Button HorizontalOptions="FillAndExpand" Text="Notification" TextColor="LightGray" FontSize="11" BackgroundColor="White" Clicked=""/>
-                <Button HorizontalOptions="FillAndExpand" Text="Messages" TextColor="LightGray" FontSize="11" BackgroundColor="White" Clicked=""/>
-                <Button HorizontalOptions="FillAndExpand" Text="Moi" TextColor="LightGray" FontSize="11" BackgroundColor="White" Clicked=""/>
+                <Button HorizontalOptions="FillAndExpand" Text="Fil" TextColor="#58B0F0" FontSize="11" BackgroundColor="White" />
+                <Button HorizontalOptions="FillAndExpand" Text="Notification" TextColor="LightGray" FontSize="11" BackgroundColor="White"/>
+                <Button HorizontalOptions="FillAndExpand" Text="Messages" TextColor="LightGray" FontSize="11" BackgroundColor="White" />
+                <Button HorizontalOptions="FillAndExpand" Text="Moi" TextColor="LightGray" FontSize="11" BackgroundColor="White"/>
             </StackLayout>
         </ContentView>
     </StackLayout>

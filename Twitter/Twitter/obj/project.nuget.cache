@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H4UtCLzpgsEZeGqCI7nEowu2a7vefdd6kV0zybPPcjec8sgpZmeJXdK2t4zr6/zV0bilMCKgGPbE2jZ6plm9ug==",
+  "dgSpecHash": "sCEdW6+eyZVlB8gKUrZ/D0pa2GpjOC2IVYXF95+RW9ZyDs9HSrjtDT0XLIF0UBAsk+UxdQHiTpuIGeOzJ0jv7w==",
   "success": true,
-  "projectFilePath": "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj",
+  "projectFilePath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mathilde\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Mathilde\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

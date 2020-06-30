@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Diqpup1UweZ8fpaqP7NbpWRBYJEoUoXs5aMdV/3wNSqO0CNC1RBqSPnS9FPCkB/ClvXVctLQzjU7AH9AoWe7zA==",
+  "dgSpecHash": "P+J4+Vr+Xfy1PvtbOEvJVIg4GGeeZSxZ8Vre67mulK1SqUyfWC+nFN4YHvk/wvdxbguG2RV02WNb8fS/xA72wQ==",
   "success": true,
-  "projectFilePath": "D:\\Projets\\Twitter\\Twitter\\Twitter.Android\\Twitter.Android.csproj",
+  "projectFilePath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter.Android\\Twitter.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mathilde\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",

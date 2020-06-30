@@ -610,11 +610,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj",
+      "projectUniqueName": "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj",
       "projectName": "Twitter",
-      "projectPath": "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj",
+      "projectPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj",
       "packagesPath": "C:\\Users\\Mathilde\\.nuget\\packages\\",
-      "outputPath": "D:\\Projets\\Twitter\\Twitter\\Twitter\\obj\\",
+      "outputPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

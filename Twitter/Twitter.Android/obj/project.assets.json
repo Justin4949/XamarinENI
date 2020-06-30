@@ -1975,11 +1975,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projets\\Twitter\\Twitter\\Twitter.Android\\Twitter.Android.csproj",
+      "projectUniqueName": "D:\\Projets\\XamarinENI\\Twitter\\Twitter.Android\\Twitter.Android.csproj",
       "projectName": "Twitter.Android",
-      "projectPath": "D:\\Projets\\Twitter\\Twitter\\Twitter.Android\\Twitter.Android.csproj",
+      "projectPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter.Android\\Twitter.Android.csproj",
       "packagesPath": "C:\\Users\\Mathilde\\.nuget\\packages\\",
-      "outputPath": "D:\\Projets\\Twitter\\Twitter\\Twitter.Android\\obj\\",
+      "outputPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2000,8 +2000,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj": {
-              "projectPath": "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj"
+            "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj": {
+              "projectPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj"
             }
           }
         }

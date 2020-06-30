@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projets\\Twitter\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj": {}
+    "D:\\Projets\\XamarinENI\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj": {}
   },
   "projects": {
-    "D:\\Projets\\Twitter\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj": {
+    "D:\\Projets\\XamarinENI\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projets\\Twitter\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj",
+        "projectUniqueName": "D:\\Projets\\XamarinENI\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj",
         "projectName": "Twitter.iOS",
-        "projectPath": "D:\\Projets\\Twitter\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj",
+        "projectPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj",
         "packagesPath": "C:\\Users\\Mathilde\\.nuget\\packages\\",
-        "outputPath": "D:\\Projets\\Twitter\\Twitter\\Twitter.iOS\\obj\\",
+        "outputPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj": {
-                "projectPath": "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj"
+              "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj": {
+                "projectPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj": {
+    "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj",
+        "projectUniqueName": "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj",
         "projectName": "Twitter",
-        "projectPath": "D:\\Projets\\Twitter\\Twitter\\Twitter\\Twitter.csproj",
+        "projectPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\Twitter.csproj",
         "packagesPath": "C:\\Users\\Mathilde\\.nuget\\packages\\",
-        "outputPath": "D:\\Projets\\Twitter\\Twitter\\Twitter\\obj\\",
+        "outputPath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

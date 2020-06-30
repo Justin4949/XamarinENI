@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xmo5a/71JxhskTHMLqmoF5eZ3ToZq1zwMHFCy0O72FmCd9IWKwtxiLFNRFdwwS2aFuRMqucud+v8kE96EmMeXg==",
+  "dgSpecHash": "+hO4lXJrjATO1LcOjdo3R5ohCy2ZdQx90KUKOa/wXmjlc1Kf9/o0IMFDBs5lAJu4bvkbOKF4FCOY4vlIPJlgFQ==",
   "success": true,
-  "projectFilePath": "D:\\Projets\\Twitter\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj",
+  "projectFilePath": "D:\\Projets\\XamarinENI\\Twitter\\Twitter.iOS\\Twitter.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mathilde\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",

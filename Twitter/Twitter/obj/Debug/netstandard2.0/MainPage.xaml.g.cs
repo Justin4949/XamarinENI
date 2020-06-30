@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Twitter.MainPage.xaml", "MainPage.xaml", typeof(global::TPXamarin.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Twitter.MainPage.xaml", "MainPage.xaml", typeof(global::Twitter.MainPage))]
 
-namespace TPXamarin {
+namespace Twitter {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("MainPage.xaml")]
