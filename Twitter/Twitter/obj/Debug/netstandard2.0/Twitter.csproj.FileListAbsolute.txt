@@ -12,7 +12,6 @@ D:\Projets\Twitter\Twitter\Twitter\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Projets\Twitter\Twitter\Twitter\obj\Debug\netstandard2.0\Twitter.dll
 D:\Projets\Twitter\Twitter\Twitter\obj\Debug\netstandard2.0\ref\Twitter.dll
 D:\Projets\Twitter\Twitter\Twitter\obj\Debug\netstandard2.0\Twitter.pdb
-D:\Projets\XamarinENI\Twitter\Twitter\obj\Debug\netstandard2.0\Twitter.csprojAssemblyReference.cache
 D:\Projets\XamarinENI\Twitter\Twitter\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Projets\XamarinENI\Twitter\Twitter\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 D:\Projets\XamarinENI\Twitter\Twitter\obj\Debug\netstandard2.0\Twitter.AssemblyInfoInputs.cache
@@ -26,3 +25,4 @@ D:\Projets\XamarinENI\Twitter\Twitter\bin\Debug\netstandard2.0\Twitter.dll
 D:\Projets\XamarinENI\Twitter\Twitter\bin\Debug\netstandard2.0\ref\Twitter.dll
 D:\Projets\XamarinENI\Twitter\Twitter\bin\Debug\netstandard2.0\Twitter.pdb
 D:\Projets\XamarinENI\Twitter\Twitter\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Projets\XamarinENI\Twitter\Twitter\obj\Debug\netstandard2.0\Twitter.csprojAssemblyReference.cache

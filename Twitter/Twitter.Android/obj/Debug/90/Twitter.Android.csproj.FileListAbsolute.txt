@@ -950,3 +950,8 @@ D:\Projets\XamarinENI\Twitter\Twitter.Android\obj\Debug\90\stamp\_ConvertResourc
 D:\Projets\XamarinENI\Twitter\Twitter.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\Projets\XamarinENI\Twitter\Twitter.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\Projets\XamarinENI\Twitter\Twitter.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\Projets\XamarinENI\Twitter\Twitter.Android\obj\Debug\90\res\drawable\reply.png
+D:\Projets\XamarinENI\Twitter\Twitter.Android\obj\Debug\90\res\drawable\retweet.png
+D:\Projets\XamarinENI\Twitter\Twitter.Android\obj\Debug\90\res\drawable\search.png
+D:\Projets\XamarinENI\Twitter\Twitter.Android\obj\Debug\90\res\drawable\favorite.png
+D:\Projets\XamarinENI\Twitter\Twitter.Android\obj\Debug\90\res\drawable\pencil.png
