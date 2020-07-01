@@ -25,3 +25,4 @@ D:\Projets\XamarinENI\Twitter\Twitter\bin\Debug\netstandard2.0\Twitter.dll
 D:\Projets\XamarinENI\Twitter\Twitter\bin\Debug\netstandard2.0\ref\Twitter.dll
 D:\Projets\XamarinENI\Twitter\Twitter\bin\Debug\netstandard2.0\Twitter.pdb
 D:\Projets\XamarinENI\Twitter\Twitter\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Projets\XamarinENI\Twitter\Twitter\obj\Debug\netstandard2.0\Twitter.csprojAssemblyReference.cache

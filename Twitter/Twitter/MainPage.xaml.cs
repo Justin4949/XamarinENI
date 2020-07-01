@@ -33,12 +33,20 @@ namespace Twitter
 
             if (String.IsNullOrEmpty(identifierStr) || identifierStr.Length < 3)
             {
+                this.form.IsVisible = true;
+                this.tweets.IsVisible = false;
+                this.buttonsback.IsVisible = false;
+
                 this.error.Text = "Veuillez entrer un identifiant d'au moins 3 caractères";
                 this.error.IsVisible = true;
                 return;
             }
             if (String.IsNullOrEmpty(passwordStr) || passwordStr.Length < 6)
             {
+                this.form.IsVisible = true;
+                this.tweets.IsVisible = false;
+                this.buttonsback.IsVisible = false;
+
                 this.error.Text = "Veuillez entrer un mot de passe d'au moins 6 caractères";
                 this.error.IsVisible = true;
                 return;
