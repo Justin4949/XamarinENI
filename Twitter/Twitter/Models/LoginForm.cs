@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Text;
 using Twitter.Entities;
 using Twitter.Services;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Twitter.Models
@@ -66,6 +67,8 @@ namespace Twitter.Models
             bool haveError = false;
             StringBuilder stringBuilder = new StringBuilder();
 
+            var current = Connectivity.NetworkAccess;
+
             if (String.IsNullOrEmpty(user.Login) || user.Login.Length < 3)
             {
                 haveError = true;
@@ -82,13 +85,29 @@ namespace Twitter.Models
                 stringBuilder.Append("Le mot de passe ne peut pas être null et doit posséder au moins 6 caractères.");
             }
 
+            if (current == NetworkAccess.Internet)
+            {
+                Debug.WriteLine("Connection to internet is available");
+            }
+
+            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+            {
+                if (haveError)
+                {
+                    stringBuilder.Append("\n");
+                }
+                haveError = true;
+                stringBuilder.Append("Veuillez vous connecter à Internet");
+            }
+
+
             if (haveError)
             {
                 this.error.Error = stringBuilder.ToString();
             }
 
             result = !haveError;
-            this.user = user;
+            this.user = user;         
 
             return result;
         }
