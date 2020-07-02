@@ -1,29 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Twitter.Models;
+using Twitter.Entities;
 
 namespace Twitter.Services
 {
     public class TwitterService : ITwitterService
     {
-        public bool authenticate(string username, string password)
+        public List<Tweet> Tweets
         {
-            if (username.Equals("justin") && password.Equals("justin"))
+            get
             {
-                return true;
+                User user = new User() { Login = "test", Password = "password" };
+                return new List<Tweet>()
+                {
+                    new Tweet(){User = user, Data ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ", CreatedAt = DateTime.Now},
+                    new Tweet(){User = user, Data ="Quisque auctor orci a orci posuere, quis sollicitudin urna rutrum. Phasellus pulvinar, lacus sit amet consequat pretium, elit diam faucibus nisl, quis ornare justo risus sit amet dolor. Nam sed massa vitae", CreatedAt = DateTime.Now},
+                    new Tweet(){User = user, Data ="maximus arcu lectus at lectus", CreatedAt = DateTime.Now},
+                    new Tweet(){User = user, Data ="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ipsum nisl, accumsan ac diam sed, scelerisque tempus sapien.", CreatedAt = DateTime.Now},
+                    new Tweet(){User = user, Data ="Praesent eu", CreatedAt = DateTime.Now}
+                };
             }
-            return false;
         }
-        public List<Tweet> getTweets()
-        {
-            var tweets = new List<Tweet>();
 
-            tweets.Add(new Tweet() { creationDate = "Thu Apr 06 15:28:43 +0000 2017", identifier = "850007368138018817", userIdentifier = "6253282", userName = "Twitter API", userPseudo = "twitterapi" });
-            tweets.Add(new Tweet() { creationDate = "Thu Apr 06 15:38:43 +0000 2017", identifier = "850007368138018818", userIdentifier = "6253282", userName = "Twitter API", userPseudo = "twitterapi" });
-            tweets.Add(new Tweet() { creationDate = "Thu Apr 06 15:48:43 +0000 2017", identifier = "850007368138018819", userIdentifier = "6253282", userName = "Twitter API", userPseudo = "twitterapi" });
-            tweets.Add(new Tweet() { creationDate = "Thu Apr 06 15:58:43 +0000 2017", identifier = "850007368138018820", userIdentifier = "6253282", userName = "Twitter API", userPseudo = "twitterapi" });
-            return tweets;
+        public Boolean Authenticate(User user)
+        {
+            return Tweets.Select(x => x.User).Any(x => x.Login == user.Login && x.Password == user.Password);
         }
     }
 }

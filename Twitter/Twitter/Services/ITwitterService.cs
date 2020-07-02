@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using Twitter.Models;
+using System.Text;
+using Twitter.Entities;
 
 namespace Twitter.Services
 {
     public interface ITwitterService
     {
-        bool authenticate(String key, String secret);
-        List<Tweet> getTweets();
+        Boolean Authenticate(User user);
+        List<Tweet> Tweets { get; }
     }
 }
