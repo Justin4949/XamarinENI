@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Twitter.Views.ViewFooter">
+    
+    <ContentView.Content>
+        <StackLayout Orientation="Horizontal">
+            <Button TextColor="#58B0F0" Text="Fil"  HorizontalOptions="FillAndExpand"></Button>
+            <Button TextColor="Gray" Text="Notification"  HorizontalOptions="FillAndExpand"></Button>
+            <Button TextColor="Gray" Text="Messages" HorizontalOptions="FillAndExpand"></Button>
+            <Button TextColor="Gray" Text="Moi" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

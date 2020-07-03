@@ -8,7 +8,7 @@ namespace Twitter.Entities
 	{
 		private User user;
 		private String data;
-		private DateTime createdAt;
+		private String createdAt;
 
 		public User User
 		{
@@ -20,7 +20,7 @@ namespace Twitter.Entities
 			get { return data; }
 			set { data = value; }
 		}
-		public DateTime CreatedAt
+		public String CreatedAt
 		{
 			get { return createdAt; }
 			set { createdAt = value; }

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:utils="clr-namespace:Twitter.Utils"
+             mc:Ignorable="d"
+             x:Class="Twitter.Views.ViewHeader">
+    <ContentView.Content>
+        <Grid Margin="10, 25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ImageButton BackgroundColor="#58B0F0" Grid.Row="0" Grid.Column="0" Source="{utils:ImageFromResources Twitter.Images.pencil.png}" VerticalOptions="Fill" HorizontalOptions="Fill"></ImageButton>
+            <Label Grid.Row="0" Grid.Column="1" TextColor="White" Text="Accueil" FontSize="20" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+            <ImageButton BackgroundColor="#58B0F0" Grid.Row="0" Grid.Column="2" Source="{utils:ImageFromResources Twitter.Images.search.png}"></ImageButton>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

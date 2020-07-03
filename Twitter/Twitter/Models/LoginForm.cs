@@ -15,20 +15,20 @@ namespace Twitter.Models
         private readonly Entry login;
         private readonly Entry password;
         private readonly Xamarin.Forms.Switch isRemind;
-        private readonly VisibilitySwitch visibilitySwitch;
         private readonly ErrorForm error;
+        private readonly INavigation navigation;
 
         private User user;
 
-        public LoginForm(Entry login, Entry password, Xamarin.Forms.Switch isRemind, View loginForm, View tweetForm, Label errorLabel, Button button)
+        public LoginForm(Entry login, Entry password, Xamarin.Forms.Switch isRemind, Label errorLabel, Button button, INavigation navigation)
         {
             this.twitterService = new TwitterService();
 
             this.login = login;
             this.password = password;
             this.isRemind = isRemind;
-            this.visibilitySwitch = new VisibilitySwitch(loginForm, tweetForm);
             this.error = new ErrorForm(errorLabel);
+            this.navigation = navigation;
             button.Clicked += Button_Clicked;
         }
 
@@ -36,21 +36,29 @@ namespace Twitter.Models
         {
             Debug.WriteLine("btn clicked");
 
-            if (this.IsValid())
+            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
             {
-                if (twitterService.Authenticate(this.user))
+                if (this.IsValid())
                 {
-                    this.error.Hide();
-                    this.visibilitySwitch.Switch();
+                    if (twitterService.Authenticate(this.user))
+                    {
+                        this.error.Hide();
+                        this.navigation.PushAsync(new MainTweetPage());
+                    }
+                    else
+                    {
+                        this.error.Error = "Utilisateur non trouvé";
+                        this.error.Display();
+                    }
                 }
                 else
                 {
-                    this.error.Error = "Utilisateur non trouvé";
                     this.error.Display();
                 }
             }
             else
             {
+                this.error.Error = "Aucune connexion internet";
                 this.error.Display();
             }
         }
@@ -66,8 +74,6 @@ namespace Twitter.Models
 
             bool haveError = false;
             StringBuilder stringBuilder = new StringBuilder();
-
-            var current = Connectivity.NetworkAccess;
 
             if (String.IsNullOrEmpty(user.Login) || user.Login.Length < 3)
             {
@@ -85,29 +91,13 @@ namespace Twitter.Models
                 stringBuilder.Append("Le mot de passe ne peut pas être null et doit posséder au moins 6 caractères.");
             }
 
-            if (current == NetworkAccess.Internet)
-            {
-                Debug.WriteLine("Connection to internet is available");
-            }
-
-            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
-            {
-                if (haveError)
-                {
-                    stringBuilder.Append("\n");
-                }
-                haveError = true;
-                stringBuilder.Append("Veuillez vous connecter à Internet");
-            }
-
-
             if (haveError)
             {
                 this.error.Error = stringBuilder.ToString();
             }
 
             result = !haveError;
-            this.user = user;         
+            this.user = user;
 
             return result;
         }

@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Twitter.Models;
-using Twitter.Services;
+using Xamarin.Essentials;
 using Xamarin.Forms;
+using Twitter.Entities;
+using Twitter.Services;
+using Twitter.Models;
 
 namespace Twitter
 {
@@ -20,7 +21,15 @@ namespace Twitter
         public MainPage()
         {
             InitializeComponent();
-            new LoginForm(this.login, this.password, this.isRemind, this.loginForm, this.tweetForm, this.errorLabel, this.connection);
+            new LoginForm(this.login, this.password, this.isRemind, this.errorLabel, this.btnConnection, this.Navigation);
+        }
+
+        protected override void OnAppearing()
+        {
+            this.login.Text = "";
+            this.password.Text = "";
+            this.isRemind.IsToggled = false;
+            base.OnAppearing();
         }
     }
 }

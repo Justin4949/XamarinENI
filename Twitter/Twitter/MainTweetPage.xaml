@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:utils="clr-namespace:Twitter.Utils"
+             xmlns:views="clr-namespace:Twitter.Views"
+             x:Class="Twitter.MainTweetPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ContentView>
+                <StackLayout Orientation="Horizontal" HeightRequest="60">
+                    <Image Source="http://univ-cotedazur.fr/contenus-riches/images/logos/logo-twitter-bleu/image" BackgroundColor="white" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </ContentView>
+            <ListView x:Name="listViewTweets"
+                CachingStrategy="RecycleElement" 
+                HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <ContentView>
+                                    <StackLayout>
+                                        <!--<Grid HorizontalOptions="FillAndExpand">-->
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image Source="https://picsum.photos/50/50/?random.jpg" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0"/>
+                                            <StackLayout>
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label Text="{Binding User.Login}" HorizontalOptions="Start"></Label>
+                                                    <Label Text="{Binding User.Password}" HorizontalOptions="StartAndExpand"></Label>
+                                                    <Label Text="{Binding CreatedAt}" TextColor="Gray"  HorizontalOptions="End"></Label>
+                                                </StackLayout>
+                                                <Label Text="{Binding Data}"></Label>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <!--<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">-->
+                                        <StackLayout Orientation="Horizontal" HeightRequest="30">
+                                            <ImageButton Source="{utils:ImageFromResources Twitter.Images.reply.png}" HorizontalOptions="CenterAndExpand"></ImageButton>
+                                            <ImageButton Source="{utils:ImageFromResources Twitter.Images.retweet.png}" HorizontalOptions="CenterAndExpand"></ImageButton>
+                                            <ImageButton Source="{utils:ImageFromResources Twitter.Images.favorite.png}" HorizontalOptions="CenterAndExpand"></ImageButton>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ContentView>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <views:ViewFooter/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
